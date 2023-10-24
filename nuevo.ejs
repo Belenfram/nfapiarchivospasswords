@@ -1,0 +1,23 @@
+<%- include("../templates/encabezado") %>
+<%- include("../templates/menu") %>
+<div class="container mt-5">
+    <form action="/nuevoUsuario" method="post" enctype="multipart/form-data">
+        <div class="card">
+            <div class="card-header">
+                <h1>Nuevo Usuario</h1>
+            </div>
+            <div class="card-body">
+                <input class="form-control mb-3" type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus>
+                <input class="form-control mb-3" type="text" name="usuario" id="usuario" placeholder="Usuario">
+                <input class="form-control mb-3" type="text" name="password" id="password" placeholder="Password">
+                <input class="form-control" type="file" name="foto" id="foto">
+            </div>
+            <div class="card-footer">
+                <button class="form-control btn-warning">Guardar Usuario</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<%- include("../templates/pie") %>
